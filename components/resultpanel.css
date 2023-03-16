@@ -1,0 +1,81 @@
+@keyframes appear {
+    from{
+        font-size: 0px;
+        opacity: 0;
+    }
+
+    to {
+        font-size: 50px;
+        opacity: 1;
+    }
+}
+
+
+/*color 1: rgb(101,66,255)
+  color2 : rgb(70,65,205) */
+.panel{
+    border-radius: 30px;
+    background-image: linear-gradient(rgb(101,66,255), rgb(70,65,205));
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    width: 300px;
+
+}
+
+.panel .result{
+    text-align: center;
+    color: rgb(199,200,251);
+    font-weight: 600;
+}
+
+.panel .score{
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(74,33,204), transparent);
+    width: 150px;
+    height: 150px;
+}
+
+.panel .score p{
+    text-align: center;
+    margin: 0px;
+}
+
+.panel .score .big{
+    animation: appear 1s ease-out 1.5s forwards;
+    opacity: 0;
+    color: white;
+    font-size: 0px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.panel .score .small{
+    color: rgba(199, 200, 251, 0.651);
+    flex-grow: 1;
+}
+
+.panel .class{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.panel .desc {
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+    color: rgb(173,176,255);
+    font-weight: 600;
+    margin-bottom: 50px;
+}

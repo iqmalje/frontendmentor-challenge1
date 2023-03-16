@@ -1,0 +1,130 @@
+@keyframes slideRight {
+    from {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes appearFromBottom {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.panel-summary{
+    background-color: white;
+    height: 388px;
+    width: 320px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.title{
+    font-weight: 700;
+}
+.block{
+    display: flex;
+    opacity: 0;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(223,97,101);
+    background-color: rgb(255,246,245);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.block .logo{
+    margin: 0;
+    display: flex;
+}
+
+.tile{
+    font-weight: 600;
+}
+
+.block .logo img{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.panel-summary .block .marks{
+    display: flex;
+    
+}
+.panel-summary .marks p{
+    margin: 0px;
+    margin-right: 7px;
+    margin-top: 16px;
+
+}
+
+.panel-summary .marks .primary{
+    color: black;
+    font-weight: 600;
+
+}
+
+.panel-summary .marks .secondary{
+    margin: 0px;
+    margin-right: 10px;
+    margin-top: 16px;
+    color: rgb(136, 136, 136);
+
+}
+
+.reaction{
+    color: rgb(223,97,101);
+    background-color: rgb(255,246,245);
+    animation: slideRight 1s ease-out forwards;
+}
+
+.memory{
+    color: rgb(237,188,89);
+    background-color: rgb(255,251,242);
+    animation: slideRight 1s ease-out 0.25s forwards;
+}
+.verbal{
+    color: rgb(40,169,138);
+    background-color: rgb(242,251,250);
+    animation: slideRight 1s ease-out 0.5s forwards;
+}
+.visual{
+    color: rgb(40,169,138);
+    background-color: rgb(243,243,253);
+    animation: slideRight 1s ease-out 0.75s forwards;
+}
+
+.continue{
+    animation: appearFromBottom 1s ease-out 2.5s both;
+    opacity: 0;
+    background-image: linear-gradient(rgb(103,77,217), rgb(49,44,232));
+    border: none;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.continue:hover{
+    opacity: 0.75;
+}
+
+.continue:active{
+    opacity: 0.5;
+    transform: translateY(5px);
+}
